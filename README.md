@@ -1,2 +1,2 @@
 # Fizika_Gim_Snov
-Vsa snov potrebna za maturo
+Gimnazijska snov fizike v 4 letih, zajemala bo vse snovi, ki so v maturitetnem katalogu.

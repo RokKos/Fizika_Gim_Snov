@@ -1,0 +1,37 @@
+{\color{indiagreen}\subsection{Grafična predstavitev rezultatov}}
+\begin{enumerate}
+	\item Urejene osi(enote, številke)
+	\item Pravilno vnešene meritve
+	\item Premica, ki se najbolj prilega
+	\item Smerni koeficient(z enotami)
+	\item Fizikalni pomen smernega koeficienta(hitrost, fizikalna količina)
+\end{enumerate}
+
+
+\begin{tikzpicture}
+\begin{axis}[
+    xlabel={t[s]},
+    ylabel={S[m]},
+    xmin=0, xmax=10,
+    ymin=0, ymax=10,
+    xtick={0,2,4,6,8,10},
+    ytick={0,2,4,6,8,10},
+    ymajorgrids=true,
+    xmajorgrids=true,
+    grid style=dashed,
+]
+ 
+\addplot[
+    color=blue,
+    mark=square,
+    ]
+    coordinates {
+    (2,1)(4,2)(8,3)(10,4)
+    };
+ 
+\end{axis}
+\end{tikzpicture}
+
+$k = \frac{y_2-y_1}{x_2-x_1}$\\
+
+\textbf{Zveza}: $S = vt$ 

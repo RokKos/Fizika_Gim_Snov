@@ -1,0 +1,36 @@
+{\color{indiagreen}\subsection{Računanje z napakami}}
+\textbf{Vsota in razlika}
+\begin{align*}
+	a &= \overline{a} \pm \Delta a\\
+	b &= \overline{b} \pm \Delta b\\
+	\hline
+	(a+b)_{max} &= (\overline{a} + \Delta a) + (\overline{b} + \Delta b) = (\overline{a} + \overline{b}) {\color{bostonuniversityred}{+}} (\Delta{a} + \Delta{b})\\
+	(a+b)_{min} &= (\overline{a} - \Delta a) + (\overline{b} - \Delta b) = (\overline{a} + \overline{b}) {\color{bostonuniversityred}{-}} (\Delta{a} + \Delta{b})\\
+	\hline
+	\color{bostonuniversityred} a + b &= \color{bostonuniversityred} (\overline{a} + \overline{b}) \pm (\Delta{a} + \Delta{b})\\
+	\color{bostonuniversityred} a - b &= \color{bostonuniversityred} (\overline{a} - \overline{b}) \pm (\Delta{a} + \Delta{b})\\
+\end{align*}
+
+\textbf{Pri seštevanju in odštevanju seštevamo absolutne napake.}
+
+\textbf{Množenje in deljenje}
+\begin{align*}
+	a &= \overline{a} \pm \Delta a\\
+	b &= \overline{b} \pm \Delta b\\
+	\hline
+	ab_{max} &= (\overline{a} + \Delta a)(\overline{b} + \Delta b) = \overline{a}\overline{b} + \overline{a}\Delta b + \overline{a}\Delta b + {\cancelto{0}{\Delta a \Delta b}}\\
+	&= \overline{a}\overline{b}(1 + \frac{\Delta a}{\overline{a}} + \frac{\Delta b}{\overline{b}}) = \overline{a}\overline{b}(1 {\color{bostonuniversityred}{+}} (\delta a + \delta b))\\
+	ab_{min} &= (\overline{a} - \Delta a)(\overline{b} - \Delta b) = \overline{a}\overline{b} - \overline{a}\Delta b - \overline{a}\Delta b + {\cancelto{0}{\Delta a \Delta b}}\\
+	&= \overline{a}\overline{b}(1 - \frac{\Delta a}{\overline{a}} - \frac{\Delta b}{\overline{b}}) = \overline{a}\overline{b}(1 {\color{bostonuniversityred}{-}} (\delta a + \delta b))\\
+	\hline
+	\color{bostonuniversityred} ab &= \color{bostonuniversityred} \overline{a}\overline{b}(1 \pm (\delta{a} + \delta{b}))\\
+	\color{bostonuniversityred} \frac{a}{b} &= \color{bostonuniversityred} \frac{\overline{a}}{\overline{b}}(1 \pm (\delta{a} + \delta{b}))\\
+\end{align*}
+
+\textbf{Pri množenju in deljenju seštevamo realtivne napake.}
+
+\textbf{Potenciranje}
+\begin{align*}
+	a &= \overline{a} \pm \Delta a\\
+	\color{bostonuniversityred} a^n &= \color{bostonuniversityred} \overline{a}^n (1 \pm (n\delta{a}))\\
+\end{align*}

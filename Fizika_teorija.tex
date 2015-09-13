@@ -1,0 +1,125 @@
+\documentclass[a4paper,oneside,12pt]{article}
+\usepackage[slovene]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{arev}
+\usepackage[T1]{fontenc}
+%\usepackage{color}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage[usenames]{color}
+\usepackage[reqno]{amsmath}
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage{array}
+\usepackage[bookmarks, colorlinks=true, %
+linkcolor=black, anchorcolor=black, citecolor=black, filecolor=black,%
+menucolor=black, runcolor=black, urlcolor=black%
+]{hyperref}
+\usepackage[
+    paper=a4paper,
+    top=2.5cm,
+    bottom=2.5cm,
+%    textheight=24cm,
+    textwidth=15cm,
+    ]{geometry}
+
+\usepackage{import}
+\usepackage{icomma}
+\usepackage{pgffor}
+\usepackage{units}
+\usepackage{minted}
+
+
+\renewcommand{\familydefault}{\sfdefault} %drugace font
+
+\newcommand*{\plogo}{\fbox{$\mathcal{PL}$}} % Generic publisher logo
+
+
+%funkcija za tab
+\usepackage{ifthen,xcolor}
+\newlength{\tabcont}
+
+\newcommand{\tab}[1]{%
+\settowidth{\tabcont}{#1}%
+\ifthenelse{\lengthtest{\tabcont < .25\linewidth}}%
+{\makebox[.25\linewidth][l]{#1}\ignorespaces}%
+{\makebox[.5\linewidth][l]{\color{red} #1}\ignorespaces}%
+}%
+
+\usepackage[makeroom]{cancel} % za crtanje texta
+\usepackage{tikz}
+\usepackage{pgfplots} %grafi
+
+
+\title{Fizika snov}
+\author{Rok Kos}
+\date{ \today}
+
+%----------------------------------------------------------------------------------------
+%	Naslovnica
+
+\newcommand*{\titleGM}{\begingroup % Create the command for including the title page in the document
+\hbox{ % Horizontal box
+\hspace*{0.2\textwidth} % Whitespace to the left of the title page
+\rule{1pt}{\textheight} % Vertical line
+\hspace*{0.05\textwidth} % Whitespace between the vertical line and title page text
+\parbox[b]{0.75\textwidth}{ % Paragraph box which restricts text to less than the width of the page
+
+{\noindent\Huge\bfseries Fizika snov}\\[2\baselineskip] % Title
+{\large \textit{Rok Kos}}\\[4\baselineskip] % Tagline or further description
+%{\Large \textsc{\today}} % Author name
+
+\vspace{0.5\textheight} % Whitespace between the title block and the publisher
+{\noindent Gimnazija Vič, Tržaška cesta 72}\\[\baselineskip] % Publisher and logo
+}}
+\endgroup}
+
+%----------------------------------------------------------------------------------------
+%	Ostevilcevanje
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\rfoot{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+\lfoot{Rok Kos 4.c \textregistered \copyright }
+\lhead{Gimnazija Vič}
+\rhead{2015-2016}
+
+%spreminjanje naslovov in podnaslov
+\usepackage{titlesec}
+\titleformat*{\section}{\LARGE\bfseries}
+\titleformat*{\subsection}{\Large\bfseries}
+\titleformat*{\subsubsection}{\large\bfseries}
+
+%barve iz strani http://latexcolor.com/
+\definecolor{indiagreen}{rgb}{0.07, 0.53, 0.03}
+\definecolor{internationalorange}{rgb}{1.0, 0.31, 0.0}
+\definecolor{alizarin}{rgb}{0.82, 0.1, 0.26}
+\definecolor{bostonuniversityred}{rgb}{0.8, 0.0, 0.0}
+
+\begin{document}
+	%\pagestyle{empty} % Removes page numbers
+	\titleGM
+	\tableofcontents
+	\newpage
+
+
+	{\color{internationalorange}\section{FIZIKALNE KOLIČINE IN ENOTE}}
+	\textbf{Fizikalna količina} je produkt merskega števila in merske enote. \\
+	\\
+	s = 5 m $\rightarrow$ \quad {\color{bostonuniversityred}{merska enota}}\\
+	\hphantom{s =} $\downarrow$\\
+	{\color{bostonuniversityred}{mersko št.}} 
+
+	\foreach \n in {1,...,5}{
+		\subimport{Fizikalne_kolicine_in_enote/}{\n.tex}
+	}
+
+	% {\color{internationalorange}\section{Premo in krivo gibanje}}
+	% \foreach \n in {1,...,10}{
+	% 	\subimport{Premo_in_krivo_gibanje/}{\n.tex}
+	% }
+
+\end{document}
