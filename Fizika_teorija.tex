@@ -49,7 +49,8 @@ menucolor=black, runcolor=black, urlcolor=black%
 \usepackage[makeroom]{cancel} % za crtanje texta
 \usepackage{tikz}
 \usepackage{pgfplots} %grafi
-
+\usepgfplotslibrary{fillbetween} %risanje po grafu
+\usepackage{empheq} % za okvirjanje enačb
 
 \title{Fizika snov}
 \author{Rok Kos}
@@ -117,9 +118,9 @@ menucolor=black, runcolor=black, urlcolor=black%
 		\subimport{Fizikalne_kolicine_in_enote/}{\n.tex}
 	}
 
-	% {\color{internationalorange}\section{Premo in krivo gibanje}}
-	% \foreach \n in {1,...,10}{
-	% 	\subimport{Premo_in_krivo_gibanje/}{\n.tex}
-	% }
+	{\color{internationalorange}\section{PREMO IN KRIVO GIBANJE}}
+	\foreach \n in {1,...,3}{
+		\subimport{Premo_in_krivo_gibanje/}{\n.tex}
+	}
 
 \end{document}
