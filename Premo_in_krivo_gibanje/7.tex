@@ -1,0 +1,75 @@
+{\color{indiagreen}\subsection{Navpični met navzgor}}
+
+\textbf{GRAFI:}\\
+\begin{tikzpicture}
+\begin{axis}[
+    xlabel={t[s]},
+    ylabel={a[$\frac{m}{s^2}$]},
+    xmin=0, xmax=10,
+    ymin=-10, ymax=10,
+    xtick={0,2,4,6,8,10},
+    ytick={-10,-5,0, 5, 10},
+    yticklabels={-10,$-g$,0, $g$,10},
+    ymajorgrids=true,
+    xmajorgrids=true,
+    grid style=dashed,
+]
+ 
+\addplot[domain=0:10,red] {-5};
+ 
+\end{axis}
+\end{tikzpicture}
+
+{\color{bostonuniversityred}Smer in velikost pospeška sta vedno ista(osvisna od mase zemlje.)} Ko gre telo gor govorimo o pojemku, ko pa dol pa o pospešku.
+
+\begin{tikzpicture}
+\begin{axis}[
+    xlabel={t[s]},
+    ylabel={v[$\frac{m}{s}$]},
+    xmin=0, xmax=10,
+    ymin=-10, ymax=10,
+    xtick={0,2,4,6,8,10},
+    ytick={-10,-5,0, 5, 10},
+    yticklabels={$-v_0$,-5,0, 5,$v_0$},
+    ymajorgrids=true,
+    xmajorgrids=true,
+    grid style=dashed,
+]
+ 
+\addplot[domain=0:10,red] {-2*x+10};
+ 
+\end{axis}
+\end{tikzpicture}
+
+Ker je pospešek vedno enak se graf ne lomi.
+
+\begin{tikzpicture}
+\begin{axis}[
+    xlabel={t[s]},
+    ylabel={v[$\frac{m}{s}$]},
+    xmin=0, xmax=10,
+    ymin=0, ymax=10,
+    xtick={0,2,4,6,8,10},
+    ytick={0,2,4,5,6,8,10},
+   	yticklabels={0,2,4,$h$,6,8,$2h$},
+    ymajorgrids=true,
+    xmajorgrids=true,
+    grid style=dashed,
+]
+ 
+\addplot[domain=0:10,red, restrict y to domain=-100:100] {(1/25) * ((x-5)^3)+5};
+ 
+\end{axis}
+\end{tikzpicture}\\
+\textbf{ENAKOMERNO POJEMAJOČE}\\
+\begin{align*}
+	v &= v_0 \pm gt\\
+	h &= v_0 t \pm \frac{gt^2}{2}\\
+	v^2 &= v_0^2 \pm 2gh\\
+\end{align*}
+\textbf{ENAKOMERNO POSPEŠUJOČE}\\
+\begin{align*}
+	v &=gt\\
+	h &= \frac{gt^2}{2}\\
+	v^2 &= 2gh\\
+\end{align*}

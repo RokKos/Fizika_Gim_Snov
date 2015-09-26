@@ -6,6 +6,7 @@
 %\usepackage{color}
 \usepackage{url}
 \usepackage{graphicx}
+\graphicspath{ {./Slike/} }
 \usepackage[usenames]{color}
 \usepackage[reqno]{amsmath}
 \usepackage{amssymb}
@@ -49,6 +50,12 @@ menucolor=black, runcolor=black, urlcolor=black%
 \usepackage[makeroom]{cancel} % za crtanje texta
 \usepackage{tikz}
 \usepackage{pgfplots} %grafi
+\pgfplotsset{
+    standard/.style={
+        every axis x label/.style={at={(current axis.right of origin)},anchor=north west}, %za dajanje labelov na x osi (yticklabels = {0, $v_0$})
+        every axis y label/.style={at={(current axis.above origin)},anchor=north east} %za dajanje labelov na y osi
+    }
+}
 \usepgfplotslibrary{fillbetween} %risanje po grafu
 \usepackage{empheq} % za okvirjanje enačb
 
@@ -119,7 +126,7 @@ menucolor=black, runcolor=black, urlcolor=black%
 	}
 
 	{\color{internationalorange}\section{PREMO IN KRIVO GIBANJE}}
-	\foreach \n in {1,...,4}{
+	\foreach \n in {1,...,9}{
 		\subimport{Premo_in_krivo_gibanje/}{\n.tex}
 	}
 
