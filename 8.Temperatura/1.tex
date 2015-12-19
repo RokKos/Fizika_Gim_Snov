@@ -1,0 +1,73 @@
+{\color{indiagreen}\subsection{Temperatura}}
+Temperatura je količina, ki opisuje stanje snovi.\\
+Je neurejeno termično gibanje, molekule se vedno premikajo in višja je temperatura bolj se gibljejo, odvisno je tudi od kemične vezi.\\
+S tem se je ukvarjal Ludwig Edward Boltzmann.\\
+\begin{align*}
+	{\color{bostonuniversityred}\overline{W_k}} &= {\color{bostonuniversityred}\frac{3}{2}kT} \text{temperatura obvezno v kelvinih}\\ 
+	k &\dots \text{Boltzmannova konstanta}\\
+	k &= 1,38 * 10 ^ {-23} \frac{J}{K}\\
+	W_k &\dots \text{Povprečna kinetična energija molekule}\\
+	T &\dots \text{temperatura} [^{\circ} C, K]\\
+\end{align*}
+Celzijeva skala $\rightarrow$ ledišče vode $0^{\circ} C$, vrelišče vode $100^{\circ} C$\\
+Kelvinova skala na osnovi krčenja plinov. Ta lestvica ne vsebuje negativnih vrednosti zato pravimo, da je absolutna temperaturna lestvica.($0K =-273^{\circ}$ in $0^{\circ} =-273K$)\\
+%\begin{center}
+%	\includegraphics[width=15cm, height=15cm,keepaspectratio=true]{Temperatura.png}
+%\end{center}
+\begin{tikzpicture}
+	\begin{axis}[
+	    xlabel={T[$^{\circ} C$]},
+	    ylabel={l[m]},
+	    xmin=-293, xmax=546,
+	    ymin=0, ymax=819,
+	    xtick={-273,0,273,546},
+	    xticklabels={0K,273K,546K, 819K},
+	    ytick={273,546},
+	    yticklabels={$l_1$,$l_2$},
+	    ymajorgrids=true,
+	    xmajorgrids=true,
+	    grid style=dashed,
+	    axis lines=middle,
+	]
+	 
+	\addplot[domain=0:546,red] {x+273};
+	\addplot[domain=-293:0,red, dashed] {x+273};
+	\end{axis}
+\end{tikzpicture}\\
+V kolikšnem razmerju je temperatura s kinetično energijo $\rightarrow$ v linearnem.\\
+%\foreach \n[count=\i] in {1,...,5}{ To je i: \i in to je rez \pgfmathparse{(\i-1) * 5} \pgfmathresult}\\
+\begin{tikzpicture}
+	\begin{axis}[
+	    xlabel={t[s]},
+	    ylabel={$W_k$},
+	    xmin=0, xmax=10,
+	    ymin=0, ymax=5,
+	    xtick={0,2,4,6,8,10},
+	    ytick={0,1,2,3,4,5},
+	    yticklabels={0,1,2,$\overline{W_k}$,4},
+	    ymajorgrids=true,
+	    xmajorgrids=true,
+	    grid style=dashed,
+	    axis lines=middle,
+	]
+	\addplot[domain=0:10,red, dashed] {3};
+	\addplot[domain=0:1,red] {2};
+	\addplot[domain=1:3,red] {4};
+	\addplot[domain=3:6,red] {2};
+	\addplot[domain=6:10,red] {4};
+	\end{axis}
+\end{tikzpicture}\\
+\begin{align*}
+	{\color{bostonuniversityred}\overline{W_k}} &= {\color{bostonuniversityred}\frac{\overline{\mu}\overline{v}^2}{2}}\\
+	\mu & \dots \text{masa molekule}\\
+\end{align*}
+Hitrost molekule se spreminja s korenom od časa.\\
+Termometri izkoriščajo to, da se s temperaturo veča in manjša prostornina snovi:\\
+\begin{itemize}
+	\item kapljevinski(alkoholni, plinski)
+	\item uporovni(nižja temperatura, večji upor)
+	\item bimetalni(iz dveh različnih kovin, ki se različno raztezajo) $\rightarrow$ ko se dovolj raztegne prekine električni krog in izklopi napravo
+\end{itemize}
+%\begin{center}
+%	\includegraphics[width=15cm, height=15cm,keepaspectratio=true]{Temperatura2.png}
+%\end{center}
