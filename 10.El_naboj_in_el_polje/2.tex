@@ -1,0 +1,33 @@
+{\color{indiagreen}\subsection{Colombov zakon}}
+%\begin{center}
+%	\includegraphics[width=15cm, height=15cm,keepaspectratio=true]{ColombovZakon.png}
+%\end{center}
+\begin{align*}
+    {\color{bostonuniversityred}F} &= {\color{bostonuniversityred}\frac{e_1 e_2}{4\pi \sigma_0 r^2}}\\
+    \sigma_0 &= 8.85 * 10^{-12} \frac{As}{Vm}[\frac{C^2}{Nm^2}]\\
+\end{align*}
+Če naboj povečamo, se obe sili povečata.\\
+\begin{tikzpicture}
+	\begin{axis}[
+	    xlabel={r},
+	    ylabel={F},
+	    xmin=0, xmax=10,
+	    ymin=-0, ymax=10,
+	    xtick={0,2,4,6,8,10},
+	    ytick={0,2,4,6,8,10},
+	    ymajorgrids=true,
+	    xmajorgrids=true,
+	    grid style=dashed,
+	    axis lines=middle,
+	]
+	\addplot[domain=0:10,red] {5/(x)};
+	\end{axis}
+\end{tikzpicture}
+%\begin{center}
+%	\includegraphics[width=15cm, height=15cm,keepaspectratio=true]{ColombovZakon2.png}
+%\end{center}
+Če je več nabojev upoštevamo vse in jih vektorsko seštejemo.\\
+Med središčema se naboj porazdeli po površini.
+%\begin{center}
+%	\includegraphics[width=15cm, height=15cm,keepaspectratio=true]{ColombovZakon3.png}
+%\end{center}
