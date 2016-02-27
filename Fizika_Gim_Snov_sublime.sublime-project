@@ -1,0 +1,21 @@
+{
+	"folders":
+	[
+		{
+			"path": ".",
+			"file_exclude_patterns":
+			[
+				"*.pdf",
+				"*.png",
+				"*.jpg",
+				"*.sh"
+			],
+			"folder_exclude_patterns":
+			[
+				"Slike",
+				"Resene_vaje_iz_fizike"
+			]
+
+		}
+	]
+}
