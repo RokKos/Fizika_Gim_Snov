@@ -51,14 +51,22 @@ Spremembe:
 	    xmajorgrids=true,
 	    grid style=dashed,
 	    axis lines=middle,
+	    legend style={at={(1.0,0.5)},anchor=east,legend cell align=right,legend plot pos=right, font=\small,draw=none,fill=none}%legenda
 	]
 	\addplot[domain=0:10,red] {10/(x) };
-	\addplot[domain=0:10,red] {20/(x)};
-	\addplot[domain=0:10,blue] {20/(x-3) - 2};
-
+	\addlegendentry{$T_1$ izoterma};
+	\addplot[domain=0:10,indiagreen] {20/(x)};
+	\addlegendentry{$T_2$ izoterma};
+	\addplot[domain=3:6,blue] {15/(x-3)-10};
+	\addplot[domain=2:5,blue] {15/(x-2)-10};
 
 	\end{axis}
 
-	\node[text width=1cm] at (0.75,1){\scriptsize {1.led}};
+	\node[text width=1cm] at (3,5.5){\scriptsize {Diabati}};
 
-\end{tikzpicture}
+\end{tikzpicture}\\
+\textbf{Diabata} ponazarja odvisnost med tlakom in volumnom, če ni izmenjave toplote iz okolice\\
+1-2 - izotermna $\rightarrow A\uparrow$ $Q\downarrow \rightarrow$ opravi delo odda toploto\\ 
+2-3 - adiabatna $\rightarrow A\uparrow\rightarrow$ dodamo delo, telo se ohladi\\
+3-4 - izotermna $\rightarrow A\uparrow$ $Q\downarrow \rightarrow$ opravi delo odda toploto\\ 
+4-1 - adiabatna $\rightarrow A\uparrow\rightarrow$ dodamo delo telo se segreje\\ 
