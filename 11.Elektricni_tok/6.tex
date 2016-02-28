@@ -1,0 +1,79 @@
+{\color{indiagreen}\subsection{Elekrično delo in moč}}
+Napetost potiska naboj po elekričnem polju in zato opravi delo.\\
+\begin{align*}
+	\Delta A &= U\Delta e\\
+	I &= \frac{\Delta e}{\Delta t}\\
+	\Delta e &= I \Delta t\\
+	\Delta A &= UI\Delta t\\
+	P &= \frac{\Delta A}{\Delta t} = \frac{UI\Delta t}{\Delta t}\\
+	{\color{bostonuniversityred}P} = {\color{bostonuniversityred}UI} &= {\color{bostonuniversityred}RI^2} = {\color{bostonuniversityred}\frac{U^2}{R}}\\
+	U &= RI\\
+	{\color{bostonuniversityred}Q} = {\color{bostonuniversityred}P\Delta t} &= {\color{bostonuniversityred}UI\Delta t} = {\color{bostonuniversityred}RI^2\Delta t} = {\color{bostonuniversityred}\frac{U^2}{R} \Delta t}\\
+\end{align*}
+Pri segrevanju upornika pride do izgub(ko gre čez tok)\\
+\textbf{Izmenični tok in napetost}\\
+V električen krog je vezan samo en upor R.\\
+\begin{tikzpicture}
+	\begin{axis}[
+	    xlabel={t},
+	    ylabel={U},
+	    xmin=0, xmax=7,
+	    ymin=-2, ymax=2,
+	    xtick={0,1.57, 3.14, 4.71, 6.28},
+	    ytick={-1,0,1},
+	    xticklabels={0, $\frac{\pi}{2}$, $\pi(t_0)$, $\frac{3\pi}{2}$, $2\pi$},
+	    yticklabels={$-U_0$, 0, $U_0$},
+	    ymajorgrids=true,
+	    xmajorgrids=true,
+	    grid style=dashed,
+	    axis lines=middle,
+	]
+	\addplot[domain=0:7,red] {sin(deg(x))};
+	\end{axis}
+\end{tikzpicture}\\
+\begin{tikzpicture}
+	\begin{axis}[
+	    xlabel={t},
+	    ylabel={I},
+	    xmin=0, xmax=7,
+	    ymin=-2, ymax=2,
+	    xtick={0,1.57, 3.14, 4.71, 6.28},
+	    ytick={-1,0,1},
+	    xticklabels={0, $\frac{\pi}{2}$, $\pi(t_0)$, $\frac{3\pi}{2}$, $2\pi$},
+	    yticklabels={$-I_0$, 0, $I_0$},
+	    ymajorgrids=true,
+	    xmajorgrids=true,
+	    grid style=dashed,
+	    axis lines=middle,
+	]
+	\addplot[domain=0:7,red] {sin(deg(x))};
+	\end{axis}
+\end{tikzpicture}\\
+Imata enak nihajni čas in posledično tudi enake ničle.\\
+\begin{tikzpicture}
+	\begin{axis}[
+	    xlabel={t},
+	    ylabel={P},
+	    xmin=0, xmax=7,
+	    ymin=-1, ymax=2,
+	    xtick={0,1.57, 3.14, 4.71, 6.28},
+	    ytick={0,0.5,1},
+	    xticklabels={0, $\frac{\pi}{2}$, $\pi(t_0)$, $\frac{3\pi}{2}$, $2\pi$},
+	    yticklabels={0,$\overline{P}$, $P_0$},
+	    ymajorgrids=true,
+	    xmajorgrids=true,
+	    grid style=dashed,
+	    axis lines=middle,
+	]
+	\addplot[domain=0:7,red] {sin(deg(x))^2};
+	\end{axis}
+\end{tikzpicture}\\
+\begin{align*}
+	P(t) &= U(t)I(t)\\
+	{\color{bostonuniversityred}\overline{P}} &= {\color{bostonuniversityred}\frac{P_0}{2}} = {\color{bostonuniversityred}\frac{I_0 U_0}{2}}\\
+	U_{ef} &\dots \text{efektivna napetost(namišljena vrednost)($\hat{U}$)}\\
+	{\color{bostonuniversityred}U_{ef}} &= {\color{bostonuniversityred}\frac{U_0}{\sqrt{2}}}\\
+	I_{ef} &\dots \text{efektivni tok(namišljena vrednost)($\hat{I}$)}\\
+	{\color{bostonuniversityred}I_{ef}} &= {\color{bostonuniversityred}\frac{I_0}{\sqrt{2}}}\\
+	{\color{bostonuniversityred}U_{ef}} &= {\color{bostonuniversityred}RI_{ef}}\\
+\end{align*}
