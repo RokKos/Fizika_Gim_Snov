@@ -108,6 +108,9 @@ menucolor=black, runcolor=black, urlcolor=black%
 \definecolor{alizarin}{rgb}{0.82, 0.1, 0.26}
 \definecolor{bostonuniversityred}{rgb}{0.8, 0.0, 0.0}
 
+%komanda za spreminjanje stevilk v rimske stevilke
+\newcommand*{\RomanNumber}[1]{\expandafter\@slowromancap\romannumeral #1@}
+
 \begin{document}
 	%\pagestyle{empty} % Removes page numbers
 	\titleGM
@@ -181,7 +184,7 @@ menucolor=black, runcolor=black, urlcolor=black%
 	}
 
 	{\color{internationalorange}\section{INDUKCIJA}}
-	\foreach \n in {1,...,3}{
+	\foreach \n in {1,...,9}{
 		\subimport{13.Indukcija/}{\n.tex}
 	}
 \end{document}
