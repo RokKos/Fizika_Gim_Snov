@@ -1,0 +1,128 @@
+{\color{indiagreen}\subsection{Lastni nihanji časi nihal}}
+\textbf{Vzmetno nihalo}(izpeljavo moraš znat!!!)\\
+%\begin{center}
+%	\includegraphics[width=15cm, height=15cm,keepaspectratio=true]{LastNihCas.png}
+%\end{center}
+*brez trenja\\
+\begin{align*}
+	F_v & = -k s_0 \dots \text{po hookovem zakonu}\\
+	F &= ma_0 \dots \text{po njutnovem zakonu}\\
+	a _0 &= -\omega^2 s_0\\
+	-k \cancelto{}{s_0} &= -\omega^2 \cancelto{}{s_0} m\\
+	{\color{bostonuniversityred}\omega} &= {\color{bostonuniversityred}\sqrt{\frac{k}{m}}}\\
+	\omega &= \frac{2 \pi}{t_0}\\
+	{\color{bostonuniversityred}t_0} &= {\color{bostonuniversityred}2 \pi \sqrt{\frac{m}{k}}}\\
+\end{align*}
+\begin{tikzpicture}
+	\begin{axis}[
+	    xlabel={m},
+	    ylabel={$t_0$},
+	    xmin=0, xmax=10,
+	    ymin=0, ymax=10,
+	    xtick={0,2,4,6,8,10},
+	    ytick={0,2,4,6,8,10},
+	    ymajorgrids=true,
+	    xmajorgrids=true,
+	    grid style=dashed,
+	    axis lines=middle,
+	]
+	\addplot[domain=0:10,red] {sqrt(3*x)};
+	\end{axis}
+\end{tikzpicture}\\
+\begin{tikzpicture}
+	\begin{axis}[
+	    xlabel={$\frac{1}{k}$},
+	    ylabel={$t_0$},
+	    xmin=0, xmax=10,
+	    ymin=0, ymax=10,
+	    xtick={0,2,4,6,8,10},
+	    ytick={0,2,4,6,8,10},
+	    ymajorgrids=true,
+	    xmajorgrids=true,
+	    grid style=dashed,
+	    axis lines=middle,
+	]
+	\addplot[domain=0:10,red] {sqrt(3*x)};
+	\end{axis}
+\end{tikzpicture}\\
+\begin{tikzpicture}
+	\begin{axis}[
+	    xlabel={$s_0$},
+	    ylabel={$t_0$},
+	    xmin=0, xmax=10,
+	    ymin=0, ymax=10,
+	    xtick={0,2,4,6,8,10},
+	    ytick={0,2,4,6,8,10},
+	    ymajorgrids=true,
+	    xmajorgrids=true,
+	    grid style=dashed,
+	    axis lines=middle,
+	]
+	\addplot[domain=0:10,red] {4};
+	\end{axis}
+\end{tikzpicture}\\
+\textbf{Matematično nihalo}\\
+%\begin{center}
+%	\includegraphics[width=15cm, height=15cm,keepaspectratio=true]{LastNihCas.png}
+%\end{center}
+*Nihanje matematičnega nihala ni \textbf{sinusno}, ker sila \textbf{ni sorazmerna z odmikom}. V  tem primeru je sila sorazmerna s sinusom\\
+\begin{align*}
+	F &= F_g \sin \rho_0\\
+	\sin \rho_0 = \rho_0 \dots &\text{\textbf{Za majne kote $\rho_0$}, vse od zdaj naprej delamo na tej podlagi.}\\
+	F &= mg \rho_0\\
+	\cancelto{}{m}g \rho_0 &= \cancelto{}{m} \omega^2 s_0\\
+	l &= r \rho\\
+	s_0 &= l\rho\\
+	g \rho_0 &= \omega^2 l \rho_0\\
+	{\color{bostonuniversityred}\omega} &= {\color{bostonuniversityred}\sqrt{\frac{g}{l}}}\\
+	{\color{bostonuniversityred}t_0} &= {\color{bostonuniversityred}2 \pi \sqrt{\frac{l}{g}}}\\
+\end{align*}
+\begin{tikzpicture}
+	\begin{axis}[
+	    xlabel={l},
+	    ylabel={$t_0$},
+	    xmin=0, xmax=10,
+	    ymin=0, ymax=10,
+	    xtick={0,2,4,6,8,10},
+	    ytick={0,2,4,6,8,10},
+	    ymajorgrids=true,
+	    xmajorgrids=true,
+	    grid style=dashed,
+	    axis lines=middle,
+	]
+	\addplot[domain=0:10,red] {sqrt(3*x)};
+	\end{axis}
+\end{tikzpicture}\\
+\begin{tikzpicture}
+	\begin{axis}[
+	    xlabel={m},
+	    ylabel={$t_0$},
+	    xmin=0, xmax=10,
+	    ymin=0, ymax=10,
+	    xtick={0,2,4,6,8,10},
+	    ytick={0,2,4,6,8,10},
+	    ymajorgrids=true,
+	    xmajorgrids=true,
+	    grid style=dashed,
+	    axis lines=middle,
+	]
+	\addplot[domain=0:10,red] {3};
+	\end{axis}
+\end{tikzpicture}\\
+\begin{tikzpicture}
+	\begin{axis}[
+	    xlabel={$s_0$},
+	    ylabel={$t_0$},
+	    xmin=0, xmax=10,
+	    ymin=0, ymax=10,
+	    xtick={0,2,4,6,8,10},
+	    ytick={0,2,4,6,8,10},
+	    ymajorgrids=true,
+	    xmajorgrids=true,
+	    grid style=dashed,
+	    axis lines=middle,
+	]
+	\addplot[domain=0:10,red] {6};
+	\end{axis}
+\end{tikzpicture}\\
+\textbf{*Nihanji čas je neodvisen od amplitude, ker so majhni koti.}\\
