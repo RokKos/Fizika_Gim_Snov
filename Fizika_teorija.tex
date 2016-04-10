@@ -3,6 +3,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{arev}
 \usepackage[T1]{fontenc}
+\usepackage{lmodern}
 %\usepackage{color}
 \usepackage{url}
 \usepackage{graphicx}
@@ -27,11 +28,17 @@ menucolor=black, runcolor=black, urlcolor=black%
 \usepackage{import}
 \usepackage{icomma}
 \usepackage{pgffor}
+%za enote
 \usepackage{units}
-\usepackage{minted}
+\usepackage{siunitx}
+%da so lahko enote samostojno
+\sisetup{free-standing-units}
 
+%\usepackage{tgbonum}
 
-\renewcommand{\familydefault}{\sfdefault} %drugace font
+%\fontfamily{\familydefault}
+%\renewcommand{\familydefault}{\familydefault} %drugace font
+\usefont{T1}{cmr}{b}{n}
 
 \newcommand*{\plogo}{\fbox{$\mathcal{PL}$}} % Generic publisher logo
 
@@ -98,9 +105,9 @@ menucolor=black, runcolor=black, urlcolor=black%
 
 %spreminjanje naslovov in podnaslov
 \usepackage{titlesec}
-\titleformat*{\section}{\LARGE\bfseries}
-\titleformat*{\subsection}{\Large\bfseries}
-\titleformat*{\subsubsection}{\large\bfseries}
+\titleformat*{\section}{\LARGE}%\bfseries}
+\titleformat*{\subsection}{\Large}%\bfseries}
+\titleformat*{\subsubsection}{\large}%\bfseries}
 
 %barve iz strani http://latexcolor.com/
 \definecolor{indiagreen}{rgb}{0.07, 0.53, 0.03}
@@ -192,4 +199,15 @@ menucolor=black, runcolor=black, urlcolor=black%
 	\foreach \n in {1,...,5}{
 		\subimport{14.Nihanje/}{\n.tex}
 	}
+
+	{\color{internationalorange}\section{VALOVANJE}}
+	\foreach \n in {1,...,4}{
+		\subimport{15.Valovanje/}{\n.tex}
+	}
+
+	%TODO: -popravi pisavo(se cisto malo)
+	%	-komanda za rdec kvadrat
+	%	-komanda za rdece oznacevanje teksta
+	%	-popravit naslove in podnaslove
+	%	-popravit enote z packagom units
 \end{document}

@@ -1,0 +1,29 @@
+{\color{indiagreen}\subsection{Hitrost valovanja na upeti vrvi}}
+\begin{align*}
+	c &= \sqrt{\frac{\sigma}{\rho}}\\
+	\sigma &= \frac{F}{S} [\unitfrac[1]{\newton}{\metre^2}]\\
+	\rho &= \frac{m}{V} [\unitfrac[1]{\kilo\gram}{\meter^3}]\\
+	c &= \sqrt{\frac{FV}{Sm}} \dots \text{S \dots presek vrvi}\\
+	V &= Sl\\
+	c &= \sqrt{\frac{F \cancelto{}{S} l}{\cancelto{}{S}m}}\\
+	c &= \sqrt{\frac{Fl}{m}} \dots \text{F - sila s katero je vrv napeta, l - dolžina vrvi, m - masa vrvi}\\
+	\mu &= \frac{m}{l}[\unitfrac[1]{\kilo\gram}{\meter}]\\
+	{\color{bostonuniversityred}c = \sqrt{\frac{\sigma}{\rho}}} &{\color{bostonuniversityred}= \sqrt{\frac{Fl}{m}} = \sqrt{\frac{F}{\mu}}}\\
+\end{align*}
+
+\begin{tikzpicture}
+	\begin{axis}[
+	    xlabel={$F$},
+	    ylabel={$c$},
+	    xmin=0, xmax=10,
+	    ymin=0, ymax=10,
+	    xtick={0,2,4,6,8,10},
+	    ytick={0,2,4,6,8,10},
+	    ymajorgrids=true,
+	    xmajorgrids=true,
+	    grid style=dashed,
+	    axis lines=middle,
+	]
+	\addplot[domain=0:10,red] {sqrt(3*x)};
+	\end{axis}
+\end{tikzpicture}\\
